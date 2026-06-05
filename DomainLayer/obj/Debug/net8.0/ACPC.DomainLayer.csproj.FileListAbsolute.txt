@@ -1,0 +1,58 @@
+D:\All Projects\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.deps.json
+D:\All Projects\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.dll
+D:\All Projects\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\All Projects\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.AssemblyInfoInputs.cache
+D:\All Projects\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.AssemblyInfo.cs
+D:\All Projects\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.dll
+D:\All Projects\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\refint\ACPC.DomainLayer.dll
+D:\All Projects\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\All Projects\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ref\ACPC.DomainLayer.dll
+D:\All Projects\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.runtimeconfig.json
+D:\All Projects\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.csproj.AssemblyReference.cache
+D:\All Projects\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.genruntimeconfig.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.deps.json
+D:\All Projects\ACPC Project\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.runtimeconfig.json
+D:\All Projects\ACPC Project\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.csproj.AssemblyReference.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC Project\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.AssemblyInfoInputs.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.AssemblyInfo.cs
+D:\All Projects\ACPC Project\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\refint\ACPC.DomainLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.genruntimeconfig.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ref\ACPC.DomainLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.deps.json
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.runtimeconfig.json
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.csproj.AssemblyReference.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.AssemblyInfoInputs.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.AssemblyInfo.cs
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.sourcelink.json
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\refint\ACPC.DomainLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.genruntimeconfig.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ref\ACPC.DomainLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.deps.json
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.runtimeconfig.json
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\bin\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.csproj.AssemblyReference.cache
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.AssemblyInfoInputs.cache
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.AssemblyInfo.cs
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.csproj.CoreCompileInputs.cache
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.sourcelink.json
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\refint\ACPC.DomainLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ACPC.DomainLayer.genruntimeconfig.cache
+D:\shrey_gandhi\ACPC\ACPC.DomainLayer\obj\Debug\net8.0\ref\ACPC.DomainLayer.dll

@@ -1,0 +1,190 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.pTitle = "Progress Tracking";
+    ViewBag.Title = "Progress Tracking";
+}
+
+
+<link href="~/assets/custom-css/CustomMaster.css" rel="stylesheet" />
+
+
+
+ 
+    <style>
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 22px;
+        }
+
+        /* Custom light backgrounds */
+        .bg-light-primary {
+            background: rgba(13,110,253,0.1);
+        }
+
+        .bg-light-success {
+            background: rgba(25,135,84,0.1);
+        }
+
+        .bg-light-warning {
+            background: rgba(255,193,7,0.1);
+        }
+
+        .bg-light-danger {
+            background: rgba(220,53,69,0.1);
+        }
+
+        .bg-light-info {
+            background: rgba(13,202,240,0.1);
+        }
+
+        .bg-light-purple {
+            background: rgba(111,66,193,0.1);
+        }
+
+        .text-purple {
+            color: #6f42c1;
+        }
+    </style>
+ 
+
+<div class="row g-3">
+
+    <!-- Total Registered -->
+    <div class="col-xl-3 col-md-6">
+        <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <div>
+                    <p class="text-muted mb-1">Total Registered</p>
+                    <h4 class="fw-bold mb-1" id="totalRegistered"></h4>
+                    <small class="text-success" id="totalRegisteredChange"></small>
+                </div>
+                <div class="icon-box bg-light-primary">
+                    <i class="mdi mdi-account-group-outline text-primary"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Total Paid -->
+    <div class="col-xl-3 col-md-6">
+        <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <div>
+                    <p class="text-muted mb-1">Total Paid</p>
+                    <h4 class="fw-bold mb-1" id="totalPaid"></h4>
+                    <small class="text-success" id="totalPaidChange"></small>
+                </div>
+                <div class="icon-box bg-light-success">
+                    <i class="mdi mdi-credit-card-outline text-success"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form In Progress -->
+    <div class="col-xl-3 col-md-6">
+        <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <div>
+                    <p class="text-muted mb-1">Form In Progress</p>
+                    <h4 class="fw-bold mb-1" id="formProgress"></h4>
+                    <small class="text-danger" id="formProgressChange"></small>
+                </div>
+                <div class="icon-box bg-light-warning">
+                    <i class="mdi mdi-clock-outline text-warning"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Documents Pending -->
+    <div class="col-xl-3 col-md-6">
+        <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <div>
+                    <p class="text-muted mb-1">Documents Pending</p>
+                    <h4 class="fw-bold mb-1" id="docsPending"></h4>
+                    <small class="text-danger" id="docsPendingChange"></small>
+                </div>
+                <div class="icon-box bg-light-danger">
+                    <i class="mdi mdi-file-document-outline text-danger"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <!-- Submitted -->
+    <div class="col-xl-3 col-md-6">
+        <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <div>
+                    <p class="text-muted mb-1">Submitted</p>
+                    <h4 class="fw-bold mb-1" id="submitted"></h4>
+                    <small class="text-success" id="submittedChange"></small>
+                </div>
+                <div class="icon-box bg-light-purple">
+                    <i class="mdi mdi-file-check-outline text-purple"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Verified -->
+    <div class="col-xl-3 col-md-6">
+        <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <div>
+                    <p class="text-muted mb-1">Verified</p>
+                    <h4 class="fw-bold mb-1" id="verified"></h4>
+                    <small class="text-success" id="verifiedChange"></small>
+                </div>
+                <div class="icon-box bg-light-info">
+                    <i class="mdi mdi-account-check-outline text-info"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Approved -->
+    <div class="col-xl-3 col-md-6">
+        <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <div>
+                    <p class="text-muted mb-1">Approved</p>
+                    <h4 class="fw-bold mb-1" id="approved"></h4>
+                    <small class="text-success" id="approvedChange"></small>
+                </div>
+                <div class="icon-box bg-light-success">
+                    <i class="mdi mdi-check-circle-outline text-success"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rejected -->
+    <div class="col-xl-3 col-md-6">
+        <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <div>
+                    <p class="text-muted mb-1">Rejected</p>
+                    <h4 class="fw-bold mb-1" id="rejected"></h4>
+                    <small class="text-danger" id="rejectedChange"></small>
+                </div>
+                <div class="icon-box bg-light-danger">
+                    <i class="mdi mdi-close-circle-outline text-danger"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts {
+    <script src="~/assets/js/custom-js/ProgressTracking.js"></script>
+}

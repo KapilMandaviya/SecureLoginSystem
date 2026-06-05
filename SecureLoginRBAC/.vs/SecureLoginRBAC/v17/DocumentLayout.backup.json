@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|d:\\shrey_gandhi\\acpc\\secureloginrbac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|d:\\shrey_gandhi\\acpc\\secureloginrbac\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|d:\\shrey_gandhi\\acpc\\secureloginrbac\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|d:\\shrey_gandhi\\acpc\\secureloginrbac\\controllers\\admissionconfiguration\\progresstrackingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|solutionrelative:controllers\\admissionconfiguration\\progresstrackingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|d:\\shrey_gandhi\\acpc\\secureloginrbac\\controllers\\admissionconfiguration\\notificationtemplatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|solutionrelative:controllers\\admissionconfiguration\\notificationtemplatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|d:\\shrey_gandhi\\acpc\\secureloginrbac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|d:\\shrey_gandhi\\acpc\\secureloginrbac\\authorize\\permissionpolicyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|solutionrelative:authorize\\permissionpolicyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|d:\\shrey_gandhi\\acpc\\secureloginrbac\\authorize\\permissionauthorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|solutionrelative:authorize\\permissionauthorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|d:\\shrey_gandhi\\acpc\\secureloginrbac\\authorize\\permissionrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|solutionrelative:authorize\\permissionrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|d:\\shrey_gandhi\\acpc\\secureloginrbac\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E8CC916C-0F0A-4ADF-AFD9-A6604D32FA44}|SecureLoginRBAC.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-05T08:48:09.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-05T08:46:41.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T08:46:20.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProgressTrackingController.cs",
+              "DocumentMoniker": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Controllers\\AdmissionConfiguration\\ProgressTrackingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdmissionConfiguration\\ProgressTrackingController.cs",
+              "ToolTip": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Controllers\\AdmissionConfiguration\\ProgressTrackingController.cs",
+              "RelativeToolTip": "Controllers\\AdmissionConfiguration\\ProgressTrackingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T08:44:49.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T08:44:03.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PermissionRequirement.cs",
+              "DocumentMoniker": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Authorize\\PermissionRequirement.cs",
+              "RelativeDocumentMoniker": "Authorize\\PermissionRequirement.cs",
+              "ToolTip": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Authorize\\PermissionRequirement.cs",
+              "RelativeToolTip": "Authorize\\PermissionRequirement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T08:43:18.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NotificationTemplateController.cs",
+              "DocumentMoniker": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Controllers\\AdmissionConfiguration\\NotificationTemplateController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdmissionConfiguration\\NotificationTemplateController.cs",
+              "ToolTip": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Controllers\\AdmissionConfiguration\\NotificationTemplateController.cs",
+              "RelativeToolTip": "Controllers\\AdmissionConfiguration\\NotificationTemplateController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T08:39:33.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PermissionPolicyProvider.cs",
+              "DocumentMoniker": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Authorize\\PermissionPolicyProvider.cs",
+              "RelativeDocumentMoniker": "Authorize\\PermissionPolicyProvider.cs",
+              "ToolTip": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Authorize\\PermissionPolicyProvider.cs",
+              "RelativeToolTip": "Authorize\\PermissionPolicyProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T08:39:27.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PermissionAuthorizationHandler.cs",
+              "DocumentMoniker": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Authorize\\PermissionAuthorizationHandler.cs",
+              "RelativeDocumentMoniker": "Authorize\\PermissionAuthorizationHandler.cs",
+              "ToolTip": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Authorize\\PermissionAuthorizationHandler.cs",
+              "RelativeToolTip": "Authorize\\PermissionAuthorizationHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T08:39:16.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\shrey_gandhi\\ACPC\\SecureLoginRBAC\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-05T08:39:04.186Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

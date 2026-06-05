@@ -1,0 +1,78 @@
+﻿@using System.Security.Claims
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.pTitle = "Category Master";
+	ViewBag.Title = "Category Master";
+}
+
+<link href="~/assets/custom-css/CustomMaster.css" rel="stylesheet" />
+
+<!-- HEADER -->
+<!-- ================= TABLE SECTION ================= -->
+<div class="card mb-3" id="tableSection">
+
+	<div class="card-body mb-3">
+		<div class="d-flex justify-content-between align-items-center mb-2">
+			<h4> Category List</h4>
+
+		@* 	@if (User.HasClaim("permission", "Admission_ProgramMaster_CREATE"))
+			{ *@
+
+				<button class="btn btn-primary" id="addBtn">
+					<i class="uil uil-plus"></i> Create Category
+				</button>
+			@* } *@
+
+		</div>
+		<table id="categoryDatatable" class="table table-bordered align-middle" style="width:100%;">
+			<thead>
+				<tr>
+					<th class="sr_no_width">Sr No</th>
+					<th>Category Name</th>
+					<th>Code</th>
+					<th>Status</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+
+	</div>
+</div>
+
+<!-- ================= FORM SECTION ================= -->
+<div class="card d-none" id="categoryFormSection">
+	<div class="card-body">
+		<h5 id="formTitle">Create Category</h5>
+
+		<input type="hidden" id="categoryId">
+
+		<div class="row">
+			<div class="col-md-6 mb-3">
+				<label class="form-label">Category Name</label>
+				<input type="text" class="form-control" id="categoryName" required>
+				<div class="text-danger small field-error d-none" id="lblcategoryNameError"></div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-6 mb-3">
+				<label class="form-label">Category Code</label>
+				<input type="text" class="form-control" id="categoryCode" required>
+				<div class="text-danger small field-error d-none" id="lblcategoryCodeError"></div>
+			</div>
+
+
+		</div>
+
+
+		<button type="submit" class="btn btn-primary" id="btnSave">Save</button>
+		<button type="button" class="btn btn-secondary" id="btnCancel">Cancel</button>
+
+	</div>
+</div>
+
+@section Scripts {
+	<script src="~/assets/js/custom-js/CategoryView.js"></script>
+}

@@ -1,0 +1,70 @@
+D:\All Projects\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.RepositoryLayer.deps.json
+D:\All Projects\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.RepositoryLayer.dll
+D:\All Projects\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.RepositoryLayer.pdb
+D:\All Projects\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DomainLayer.dll
+D:\All Projects\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\All Projects\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.csproj.AssemblyReference.cache
+D:\All Projects\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.AssemblyInfoInputs.cache
+D:\All Projects\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.AssemblyInfo.cs
+D:\All Projects\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.Rep.5C37B8D3.Up2Date
+D:\All Projects\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.dll
+D:\All Projects\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\refint\ACPC.RepositoryLayer.dll
+D:\All Projects\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.pdb
+D:\All Projects\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ref\ACPC.RepositoryLayer.dll
+D:\All Projects\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DtoLayer.dll
+D:\All Projects\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.RepositoryLayer.deps.json
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.RepositoryLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.RepositoryLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DomainLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DtoLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.csproj.AssemblyReference.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.AssemblyInfoInputs.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.AssemblyInfo.cs
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.Rep.5C37B8D3.Up2Date
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\refint\ACPC.RepositoryLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ref\ACPC.RepositoryLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.RepositoryLayer.deps.json
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.RepositoryLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.RepositoryLayer.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DomainLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DtoLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.csproj.AssemblyReference.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.AssemblyInfoInputs.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.AssemblyInfo.cs
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.sourcelink.json
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.Rep.5C37B8D3.Up2Date
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\refint\ACPC.RepositoryLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ref\ACPC.RepositoryLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.RepositoryLayer.deps.json
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.RepositoryLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.RepositoryLayer.pdb
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DomainLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DtoLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\bin\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.csproj.AssemblyReference.cache
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.AssemblyInfoInputs.cache
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.AssemblyInfo.cs
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.csproj.CoreCompileInputs.cache
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.sourcelink.json
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.Rep.5C37B8D3.Up2Date
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\refint\ACPC.RepositoryLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ACPC.RepositoryLayer.pdb
+D:\shrey_gandhi\ACPC\ACPC.RepositoryLayer\obj\Debug\net8.0\ref\ACPC.RepositoryLayer.dll

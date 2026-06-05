@@ -1,0 +1,345 @@
+﻿@using DtoLayer
+@{
+	ViewData["Title"] = "Login";
+	Layout = "~/Views/Shared/_BlankLayout.cshtml";
+}
+
+<link href="~/assets/custom-css/login.css" rel="stylesheet" />
+
+<link href="~/assets/libs/toastr/build/toastr.min.css" rel="stylesheet" />
+ 
+<div id="loginContainer" class="auth-screen justify-content-center align-items-center container">
+
+	@* <div class="container d-flex justify-content-center align-items-center min-vh-100" id="loginContainer"> *@
+	<div class="card shadow-sm p-4 p-md-5 login-card w-100" style="max-width: 450px;">
+		<h3 class="text-center mb-4">Login</h3>
+
+		<!-- Email -->
+		<div class="mb-3 position-relative field-wrapper">
+			<i class="fas fa-envelope input-icon"></i>
+			<input type="email" tabindex="1" style="padding-left:45px !important;" class="form-control" placeholder="Enter your email" id="txtEmail">
+			<div class="text-danger small field-error d-none"
+				 id="lblemailError">
+			</div>
+		</div>
+
+
+
+		<!-- Password -->
+		@* <div class="mb-3 position-relative">
+			<i class="fas fa-lock input-icon"></i>
+			<input type="password" style="padding-left: 45px !important;" class="form-control" placeholder="Enter your password" id="txtPass">
+		</div> *@
+
+		<div class="mb-3 position-relative field-wrapper">
+			<i class="fas fa-lock input-icon"></i>
+
+			<input type="password" tabindex="2"
+				   style="padding-left:45px !important; padding-right:45px !important;"
+				   class="form-control"
+				   placeholder="Enter your password"
+				   id="txtPass">
+
+			<!-- Eye icon -->
+			<i class="fas fa-eye toggle-password" tabindex="3" id="togglePassword"></i>
+
+			<div class="text-danger small field-error d-none"
+				 id="lblpassError">
+			</div>
+		</div>
+
+
+
+		<!-- Authentication Sections -->
+		<!-- Captcha Authentication -->
+		<div class="auth-section d-none" id="authCaptchaDiv">
+
+			@* <div class="auth-section" id="authCaptchaDiv" style="display:none"> *@
+			<h6 class="mb-2" id="captchaStatus">
+				<i class="fas fa-shield-alt me-2"></i>
+				<span id="captchaStatusText">Captcha Verification</span>
+			</h6>
+
+
+
+
+			<div class="row gx-2 gy-1 align-items-center m-0">
+
+				<!-- Captcha Image -->
+				<div class="col-md-6">
+					<img id="captchaImg"
+						 src="/Login/Generate"
+						 alt="Captcha"
+						 class="img-fluid border rounded"
+						 style="height:20% !important; width:100%;" />
+
+				</div>
+
+				<!-- Captcha Input -->
+				<div class="col-md-6">
+					<input type="text" tabindex="4"
+						   class="form-control"
+						   id="txtCaptcha"
+						   placeholder="Enter captcha"
+						   maxlength="5">
+
+				</div>
+
+			</div>
+
+			<!-- Error Message -->
+			<div class="row justify-content-between mb-2">
+				<div class="col-md-6">
+
+					<button type="button" tabindex="6"
+							id="btnRefreshCaptch"
+							class="btn btn-link p-0 ms-3">
+						Refresh
+					</button>
+
+				</div>
+
+				<div class="col-md-6">
+					<span class="text-danger justify-content-start small d-none" id="captchaErrorMsg">
+					</span>
+				</div>
+
+			</div>
+
+
+		</div>
+
+		<!-- Login Button -->
+		<button type="button" id="btnSubmitLogin" class="btn btn-primary w-100 login-btn" tabindex="5">
+			Login
+		</button>
+		<!-- Forgot Password -->
+		<div class="text-end mb-3">
+			<a href="#" class="forgot-link text-primary">Forgot password?</a>
+		</div>
+	</div>
+</div>
+
+<div id="emailOtpVerifyContainer" class="auth-screen otp-container justify-content-center align-items-center">
+
+	@* <div class="otp-container d-none justify-content-center align-items-center min-vh-100" id="emailOtpVerifyContainer"> *@
+	<div class="otp-body">
+		<h3 class="text-center mb-4">Email OTP Verify</h3>
+		<p>Enter the 6-digit code sent to your registred email</p>
+
+		<div class="otp-inputs">
+			<input type="text" class="otp-input form-control" maxlength="1" data-index="0" autofocus>
+			<input type="text" class="otp-input form-control" maxlength="1" data-index="1">
+			<input type="text" class="otp-input form-control" maxlength="1" data-index="2">
+			<input type="text" class="otp-input form-control" maxlength="1" data-index="3">
+			<input type="text" class="otp-input form-control" maxlength="1" data-index="4">
+			<input type="text" class="otp-input form-control" maxlength="1" data-index="5">
+		</div>
+
+		<p class="instructions">Click on the boxes or use keyboard numbers to enter the code</p>
+
+
+
+		<button class="btn btn-verify btn-primary" id="verifyBtn" disabled>
+			<i class="fas fa-check-circle me-2"></i> Verify OTP
+		</button>
+
+		<div class="resend-option">
+			<p class="mb-2">Didn't receive the code?</p>
+			<a class="resend-link disabled" id="resendLink">Resend OTP</a>
+		</div>
+	</div>
+</div>
+
+<div id="mobieOtpVerifyContainer" class="auth-screen otp-mobile-container justify-content-center align-items-center">
+
+	@* <div class="otp-mobile-container d-none justify-content-center align-items-center" id="mobieOtpVerifyContainer"> *@
+	<div class="otp-body">
+
+		<h3 class="text-center mb-4">Mobile OTP Verify</h3>
+		<p>Enter the 6-digit code sent to your mobile number</p>
+		<div class="otp-inputs">
+			<input type="text" class="otp-input-mobile form-control" maxlength="1" data-index="0" autofocus>
+			<input type="text" class="otp-input-mobile form-control" maxlength="1" data-index="1">
+			<input type="text" class="otp-input-mobile  form-control" maxlength="1" data-index="2">
+			<input type="text" class="otp-input-mobile  form-control" maxlength="1" data-index="3">
+			<input type="text" class="otp-input-mobile  form-control" maxlength="1" data-index="4">
+			<input type="text" class="otp-input-mobile  form-control" maxlength="1" data-index="5">
+		</div>
+
+		<p class="instructions">Click on the boxes or use keyboard numbers to enter the code</p>
+
+		<button class="btn btn-verify-mobile btn-primary" id="verifyBtnMobile" disabled>
+			<i class="fas fa-check-circle me-2"></i> Verify OTP
+		</button>
+
+		<div class="resend-option">
+			<p class="mb-2">Didn't receive the code?</p>
+			<a class="resend-link disabled" id="resendLinkMobile">Resend OTP</a>
+		</div>
+	</div>
+
+
+</div>
+
+<div id="twoFactorQRContainer" class="auth-screen otp-2f-container justify-content-center align-items-center">
+
+	@* <div class="otp-2f-container d-none justify-content-center align-items-center" id="twoFactorQRContainer"> *@
+
+	@* <div class="otp-body d-none" id="QRGenerator">
+		<h3 class="text-center mb-4">Two Factor Authentication</h3>
+		<p>Please follow the below procress </p>
+		<div class="qr-code" id="QRCODE">
+		</div>
+
+
+
+		<h5>Manual setup</h5>
+		<p>If you have only one device, add the account manually:</p>
+
+		<ul class="list-unstyled">
+			<li><strong>Account:</strong> <span id="manualAccount"></span></li>
+			<li><strong>Key type:</strong> Time-based</li>
+			<li>
+				<strong>Secret key:</strong>
+				<code id="manualSecret" class="ms-2"></code>
+				<button class="btn btn-sm btn-outline-secondary ms-2" id="btnCopySecret">
+					Copy
+				</button>
+			</li>
+		</ul>
+
+		<div class="qr-instructions">
+			<h5>How to set up:</h5>
+			<ol>
+				<li>Open Google Authenticator on your phone</li>
+				<li>Tap the "+" icon and select "Scan a QR code"</li>
+				<li>Point your camera at the QR code above</li>
+				<li>Enter the 6-digit code from the app to verify</li>
+			</ol>
+		</div>
+
+		<a class="btn btn-primary" id="btnVeriyOtpScreen">Proceed to Verification</a>
+	</div> *@
+
+
+	<div class="otp-body d-none w-100" id="QRGenerator" >
+
+		<div class="card mx-auto">
+			<div class="card-body text-center">
+
+				<h4 class="mb-1 mt-1">Two-Factor Authentication</h4>
+				<p class="text-muted mb-2">
+					Secure your account using Google Authenticator App
+				</p>
+
+				<!-- QR CODE -->
+				<div class="qr-code mb-1" id="QRCODE"></div>
+				 
+				<hr>
+
+				<!-- MANUAL SETUP -->
+				<h6 class="mt-1">Manual setup Without Scan QR-Code</h6>
+				<p class="small text-muted">
+					If you cannot scan the QR code, enter these details manually.
+				</p>
+
+				<div class="text-start small">
+					<div class="mb-1">
+						<strong>Account:</strong>
+						<span id="manualAccount"></span>
+					</div>
+
+					<div class="mb-1">
+						<strong>Key type:</strong> Time-based
+					</div>
+
+					<div class="mb-1 d-flex align-items-center flex-wrap">
+						<strong class="me-2">Secret key:</strong>
+						<code id="manualSecret" class="me-2 text-break"></code>
+						<button type="button"  class="btn btn-sm btn-outline-secondary" id="btnCopySecret">
+							Copy
+						</button>
+					</div>
+				</div>
+
+				<hr>
+
+				<!-- STEPS -->
+				<div class="qr-instructions text-start small">
+					<h6>How to set up</h6>
+					<ol class="ps-3">
+						<li>Open Google Authenticator</li>
+						<li>Tap <strong>+</strong> → Choose <strong>Scan QR</strong> or <strong>Enter key</strong></li>
+						<li>Add the account</li>
+						
+						<li>Enter the 6-digit code to verify</li>
+					</ol>
+				</div>
+
+				<!-- ACTION -->
+				<button class="btn btn-primary w-100 mt-1" id="btnVeriyOtpScreen">
+					Proceed to Verification
+				</button>
+
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="no-qr-message d-none" id="NoQrCode">
+		<p>No QR Code found. Please try again.</p>
+	</div>
+
+
+
+	<div class="otp-body d-none" id="twoFactorVerifyContainer">
+
+		<h3 class="text-center mb-4">2FA OTP Verify</h3>
+		<p>Enter the 6-digit code from your Authenticate App </p>
+
+		<div class="otp-inputs">
+			<input type="text" class="otp-input-2FA form-control" maxlength="1" data-index="0" autofocus>
+			<input type="text" class="otp-input-2FA form-control" maxlength="1" data-index="1">
+			<input type="text" class="otp-input-2FA form-control" maxlength="1" data-index="2">
+			<input type="text" class="otp-input-2FA form-control" maxlength="1" data-index="3">
+			<input type="text" class="otp-input-2FA form-control" maxlength="1" data-index="4">
+			<input type="text" class="otp-input-2FA form-control" maxlength="1" data-index="5">
+		</div>
+
+		<p class="instructions">Click on the boxes or use keyboard numbers to enter the code</p>
+
+		<button class="btn btn-verify-2FA btn-primary" id="verifyBtn2FA" disabled>
+			<i class="fas fa-check-circle me-2"></i> Verify Code
+		</button>
+
+		@* <div class="d-flex gap-2 mt-3">
+			<a class="btn btn-primary w-100" id="btnClear2FA">
+				New Device Login
+			</a>
+
+			<button class="btn btn-primary w-100" id="btnShowQRAgain">
+				<i class="fas fa-qrcode me-2"></i> Show QR Again
+			</button>
+		</div> *@
+
+
+	</div>
+
+
+</div>
+
+@section Scripts {
+
+	<script>
+		window.AUTH_SETTINGS = @Html.Raw(Json.Serialize(ViewBag.AuthSettings))
+	</script>
+
+
+	<script src="~/assets/js/toastr.min.js"></script>
+	<script src="~/assets/js/Custom-Js/notificationToastCustom.js"></script>
+	<script src="~/assets/js/custom-js/login.js"></script>
+	
+	 
+}

@@ -1,0 +1,88 @@
+﻿<!-- ========== Left Sidebar Start ========== -->
+<style>
+	body[data-sidebar-size=sm] .vertical-menu #sidebar-menu > ul > li:hover > a {
+		width:260px;
+	}
+
+	body[data-sidebar-size=sm] .vertical-menu #sidebar-menu > ul > li:hover > ul {
+		width:200px;
+		
+	}
+
+	.page-loader {
+		position: fixed;
+		inset: 0;
+		background: rgba(255, 255, 255, 0.75);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 99999;
+		display: none; /* hidden by default */
+	}
+
+	.spinner {
+		width: 45px;
+		height: 45px;
+		border: 5px solid #e0e0e0;
+		border-top: 5px solid #0d6efd;
+		border-radius: 50%;
+		animation: spin 0.8s linear infinite;
+	}
+
+	@@keyframes spin {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+</style>
+<div id="pageLoader" class="page-loader">
+	<div class="spinner"></div>
+</div>
+<div class="vertical-menu">
+
+	<!-- LOGO -->
+	<div class="navbar-brand-box">
+		<a href="@Url.Action("Index", "Dashboard")" class="logo logo-dark">
+			<span class="logo-sm">
+				<img src="~/assets/images/logo-sm.png" alt="" height="22">
+			</span>
+			<span class="logo-lg">
+				<img src="~/assets/images/logo-dark.png" alt="" height="20">
+			</span>
+		</a>
+
+		<a href="@Url.Action("Index", "Dashboard")" class="logo logo-light">
+			<span class="logo-sm">
+				<img src="~/assets/images/logo-sm.png" alt="" height="22">
+			</span>
+			<span class="logo-lg">
+				<img src="~/assets/images/logo-light.png" alt="" height="20">
+			</span>
+		</a>
+	</div>
+
+	<button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+		<i class="fa fa-fw fa-bars"></i>
+	</button>
+
+	<div data-simplebar class="sidebar-menu-scroll">
+
+		<!--- Sidemenu -->
+		<div id="sidebar-menu">
+			<ul class="metismenu list-unstyled" id="side-menu">
+			</ul>
+			<!-- Left Menu Start -->
+			
+		</div>
+		<!-- Sidebar -->
+	</div>
+</div>
+
+
+<!-- Left Sidebar End -->
+@section Scripts {
+	<script src="~/assets/js/custom-js/sidebarMenu.js"></script>
+
+	 
+ }

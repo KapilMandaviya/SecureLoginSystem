@@ -1,0 +1,134 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.pTitle = "Notification Setting";
+	ViewBag.Title = "Notification Setting";
+}
+
+<link href="~/assets/custom-css/CustomMaster.css" rel="stylesheet" />
+
+
+<!-- ================= TABLE SECTION ================= -->
+<div class="card mb-3" id="tableSection">
+	<div class="card-body">
+
+		<div class="d-flex justify-content-between align-items-center mb-2">
+			<h4>Notification Template List</h4>
+
+			<button class="btn btn-primary" id="addBtn">
+				<i class="uil uil-plus"></i> Create Template
+			</button>
+		</div>
+
+		<table id="templateTable" class="table table-bordered align-middle w-100">
+			<thead>
+				<tr>
+					<th>Sr No</th>
+					<th>Event Code</th>
+					<th>Event Name</th>
+					<th>Channel</th>
+					<th>Subject</th>
+					<th>Status</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+		</table>
+
+	</div>
+</div>
+
+
+<div class="card d-none" id="formSection">
+	<div class="card-header">
+		Notification Template Setup
+	</div>
+
+	<div class="card-body">
+		<input type="hidden" id="templateId" value="0" />
+
+		<!-- Event Code -->
+		<div class="mb-3">
+			<label class="form-label">Event Code</label>
+			<input type="text" class="form-control" id="eventCode" placeholder="e.g. REG_USER, PAY_SUCCESS">
+			<small class="text-danger d-none" id="err_eventCode"></small>
+		</div>
+
+		<!-- Template Name -->
+		<div class="mb-3">
+			<label class="form-label">Template Name</label>
+			<input type="text" class="form-control" id="eventName" placeholder="Enter template name">
+			<small class="text-danger d-none" id="err_eventName"></small>
+		</div>
+
+		<!-- Channel Selection -->
+		<div class="mb-3">
+			<label class="form-label fw-semibold">Select Channel</label>
+
+			<div class="d-flex gap-4 align-items-center">
+
+				<div class="form-check">
+					<input class="form-check-input me-2" type="radio" name="channel" value="SMS" id="sms" onclick="toggleFields()">
+					<label class="form-check-label" for="sms">SMS</label>
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input me-2" type="radio" name="channel" id="email" value="EMAIL" onclick="toggleFields()">
+					<label class="form-check-label" for="email">Email</label>
+				</div>
+
+				<div class="form-check">
+					<input class="form-check-input me-2" type="radio" name="channel" id="whatsapp" value="WHATSAPP" onclick="toggleFields()">
+					<label class="form-check-label" for="whatsapp">WhatsApp</label>
+				</div>
+
+			</div>
+			<small class="text-danger d-none" id="err_channel"></small>
+		</div>
+
+
+
+		<!-- Email Subject -->
+		<div class="mb-3 d-none" id="emailSubjectDiv">
+			<label class="form-label">Email Subject</label>
+			<input type="text" class="form-control" id="emailSubject" placeholder="Enter email subject">
+			<small class="text-danger d-none" id="err_subject"></small>
+		</div>
+
+		<!-- Body -->
+		<div class="mb-3">
+			<label class="form-label">Message Body</label>
+			<div id="classic-editor"></div>
+			<small class="text-danger d-none" id="lblBodyError"></small>
+			<small class="text-danger d-none" id="err_body"></small>
+		</div>
+
+
+
+		<!-- Buttons -->
+		<div class="text-end">
+			<button class="btn btn-secondary" id="btnCancel">Cancel</button>
+			<button class="btn btn-primary" id="btnSave">Save Template</button>
+		</div>
+
+	</div>
+</div>
+
+@section Scripts {
+
+	<script src="~/assets/libs/@("@")ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
+
+	<script>
+		function toggleFields() {
+			const selected = document.querySelector('input[name="channel"]:checked')?.value;
+			const emailDiv = document.getElementById("emailSubjectDiv");
+
+			if (selected === "EMAIL") {
+				emailDiv.classList.remove("d-none");
+			} else {
+				emailDiv.classList.add("d-none");
+			}
+		}
+	</script>
+	<script src="~/assets/js/custom-js/NotificationTemplate.js"></script>
+
+
+}

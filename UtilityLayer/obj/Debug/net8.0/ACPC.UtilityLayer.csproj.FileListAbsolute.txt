@@ -1,0 +1,49 @@
+D:\All Projects\ACPC\ACPC.UtilityLayer\bin\Debug\net8.0\ACPC.UtilityLayer.deps.json
+D:\All Projects\ACPC\ACPC.UtilityLayer\bin\Debug\net8.0\ACPC.UtilityLayer.dll
+D:\All Projects\ACPC\ACPC.UtilityLayer\bin\Debug\net8.0\ACPC.UtilityLayer.pdb
+D:\All Projects\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.AssemblyInfoInputs.cache
+D:\All Projects\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.AssemblyInfo.cs
+D:\All Projects\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.dll
+D:\All Projects\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\refint\ACPC.UtilityLayer.dll
+D:\All Projects\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.pdb
+D:\All Projects\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ref\ACPC.UtilityLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.UtilityLayer\bin\Debug\net8.0\ACPC.UtilityLayer.deps.json
+D:\All Projects\ACPC Project\ACPC\ACPC.UtilityLayer\bin\Debug\net8.0\ACPC.UtilityLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.UtilityLayer\bin\Debug\net8.0\ACPC.UtilityLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.csproj.AssemblyReference.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC Project\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.AssemblyInfoInputs.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.AssemblyInfo.cs
+D:\All Projects\ACPC Project\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\refint\ACPC.UtilityLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ref\ACPC.UtilityLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.UtilityLayer\bin\Debug\net8.0\ACPC.UtilityLayer.deps.json
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.UtilityLayer\bin\Debug\net8.0\ACPC.UtilityLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.UtilityLayer\bin\Debug\net8.0\ACPC.UtilityLayer.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.csproj.AssemblyReference.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.AssemblyInfoInputs.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.AssemblyInfo.cs
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.sourcelink.json
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\refint\ACPC.UtilityLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ref\ACPC.UtilityLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.UtilityLayer\bin\Debug\net8.0\ACPC.UtilityLayer.deps.json
+D:\shrey_gandhi\ACPC\ACPC.UtilityLayer\bin\Debug\net8.0\ACPC.UtilityLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.UtilityLayer\bin\Debug\net8.0\ACPC.UtilityLayer.pdb
+D:\shrey_gandhi\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.csproj.AssemblyReference.cache
+D:\shrey_gandhi\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\shrey_gandhi\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.AssemblyInfoInputs.cache
+D:\shrey_gandhi\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.AssemblyInfo.cs
+D:\shrey_gandhi\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.csproj.CoreCompileInputs.cache
+D:\shrey_gandhi\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.sourcelink.json
+D:\shrey_gandhi\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\refint\ACPC.UtilityLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ACPC.UtilityLayer.pdb
+D:\shrey_gandhi\ACPC\ACPC.UtilityLayer\obj\Debug\net8.0\ref\ACPC.UtilityLayer.dll

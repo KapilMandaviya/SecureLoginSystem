@@ -1,0 +1,306 @@
+﻿@using System.Security.Claims
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.pTitle = "Role Master";
+	ViewBag.Title = "Role Master";
+}
+<link href="~/assets/custom-css/RolePermissionConfig.css" rel="stylesheet" />
+<style>
+	.select2-container .select2-selection--multiple {
+		min-height: 38px; /* Bootstrap input height */
+		display: flex;
+		align-items: center;
+	}
+
+	.select2-selection__rendered {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 4px;
+	}
+
+	.select2-selection__choice {
+		margin: 0;
+	}
+
+	.fw-bold i.fas.fa-chevron-down {
+		cursor: pointer;
+		margin-left: 8px;
+		font-size: 1rem; /* adjust size if needed */
+	}
+
+	.permissions-table {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	/* Desktop */
+	.col-view {
+		width: 60px;
+	}
+
+	.col-form {
+		width: 30%;
+	}
+
+	.col-permission {
+		width: auto;
+	}
+
+	/* Tablet */
+	@@media (max-width: 992px) {
+		.col-form {
+			width: 35%;
+		}
+	}
+
+	/* Mobile */
+	@@media (max-width: 576px) {
+		.col-view {
+			width: 50px;
+		}
+
+		.col-form {
+			width: 200px;
+		}
+	}
+</style>
+
+<!-- HEADER -->
+<!-- ================= TABLE SECTION ================= -->
+<ul class="nav nav-tabs mb-3" id="roleTabs">
+	<li class="nav-item">
+		<button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tabRoleMaster">
+			Role Master
+		</button>
+	</li>
+	<li class="nav-item">
+		<button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabRolePriority">
+			Role Priority
+		</button>
+	</li>
+</ul>
+<div class="tab-content">
+	<div class="tab-pane fade show active" id="tabRoleMaster">
+
+		<!-- ================= MAIN VIEW: ROLE LIST ================= -->
+		<!-- ================= MAIN VIEW: ROLE LIST ================= -->
+		<div id="mainView">
+			<div class="card">
+
+				<!-- Card Header -->
+				<div class="card-header d-flex justify-content-between align-items-center bg-white">
+					<h5 class="mb-0">
+						<i class="bi bi-people me-2"></i> All Roles
+					</h5>
+					@if (User.HasClaim("permission", "Admission_RoleMaster_CREATE"))
+					{
+
+						<button class="btn btn-primary" id="btnNewRole">
+							<i class="bi bi-plus-circle me-1"></i> New Role
+						</button>
+					}
+				</div>
+
+				<!-- Card Body -->
+				<div class="card-body">
+					<table id="roleTable" class="table table-bordered align-middle" style="width:100%;">
+
+						<thead>
+							<tr>
+								<th>Role Name</th>
+								<th>Priority</th>
+								<th>Status</th>
+
+								<th>Actions</th>
+
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- ================= ROLE FLOW (CREATE/CONFIGURE) ================= -->
+		<!-- ================= ROLE FLOW (CREATE / CONFIGURE) ================= -->
+		<div id="roleFlow" class="d-none">
+			<div class="card">
+
+				<!-- Card Header -->
+				<div class="card-header bg-white">
+					<h5 class="mb-2" id="roleFlowTitle">
+						<i class="bi bi-person-badge me-2"></i> Create Role
+					</h5>
+
+					<!-- Step Indicator -->
+					<div class="step-indicator mb-0">
+						<div class="step active" id="step1-indicator">
+							<div class="step-circle">1</div>
+							<div class="step-label">Role Details</div>
+						</div>
+						<div class="step" id="step2-indicator">
+							<div class="step-circle">2</div>
+							<div class="step-label">Permissions</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Card Body -->
+				<div class="card-body">
+
+					<!-- ================= STEP 1 ================= -->
+					<div id="step1">
+						<div class="row g-3">
+							<div class="col-md-6">
+								<label class="form-label">Role Name *</label>
+								<input type="text" class="form-control" id="roleName">
+								<div class="text-danger small field-error d-none" id="lblRoleNameError"></div>
+							</div>
+
+							<div class="col-md-6">
+								<label class="form-label">Priority Level</label>
+								<input type="number" class="form-control" id="rolePriority">
+								<div class="text-danger small field-error d-none" id="lblPriorityError"></div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-check form-switch">
+									<input class="form-check-input" type="checkbox" id="roleStatus" checked>
+									<label class="form-check-label fw-bold">Active Role</label>
+									<div class="text-danger small field-error d-none" id="lblactiveError"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="d-flex justify-content-between mt-4">
+							<button class="btn btn-secondary" id="btnCancel">
+								<i class="bi bi-x-circle me-1"></i> Cancel
+							</button>
+							<button class="btn btn-primary" id="btnNext">
+								Next: Seat MAtrix <i class="bi bi-arrow-right ms-1"></i>
+							</button>
+						</div>
+					</div>
+
+					<!-- ================= STEP 2 ================= -->
+					<div id="step2" class="d-none">
+
+						<!-- Role Info -->
+						<div class="role-info-header d-none" id="roleInfoHeader">
+							<div class="row">
+								<div class="col-md-4"><strong>Role:</strong> <span id="configRoleName"></span></div>
+								<div class="col-md-4"><strong>Priority:</strong> <span id="configRolePriority"></span></div>
+								<div class="col-md-4"><strong>Status:</strong> <span id="configRoleStatus"></span></div>
+							</div>
+						</div>
+						<div class="row justify-content-center mb-3">
+							<div class="col-md-4">
+								<div class="row align-items-center">
+
+									<label class="col-4 col-form-label">Select Module</label>
+
+									<div class="col-8">
+										<select class="form-select" id="moduleSelect" name="moduleSelect">
+											@* <option value="0" disabled selected>-- Select Module --</option> *@
+											@foreach (var item in ViewBag.ModulesList as List<SelectListItem>)
+											{
+												<option value="@item.Value">@item.Text</option>
+											}
+										</select>
+
+										<div class="text-danger small d-none" id="lblmoduleSelect"></div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+
+						<!-- Permissions Table -->
+						<div class="table-responsive">
+							@* 	<table class="table table-bordered permissions-table" id="permissionsTable">
+								<thead>
+									<tr>
+										<th>View</th>
+										<th>Form</th>
+										<th>Select Permission</th>
+
+									</tr>
+								</thead>
+								<tbody id="permissionsTable"></tbody>
+							</table> *@
+							<table class="table table-bordered permissions-table">
+								<thead>
+									<tr>
+										<th style="width:5%">View</th>
+										<th style="width:25%">Form</th>
+										<th style="width:70%">Select Permission</th>
+									</tr>
+								</thead>
+								<tbody id="permissionsTableBody"></tbody>
+							</table>
+
+						</div>
+
+						<div class="d-flex justify-content-between mt-4">
+							<button class="btn btn-outline-secondary" id="btnBack">
+								<i class="bi bi-arrow-left me-1"></i> Back
+							</button>
+							<button class="btn btn-success" id="btnSave">
+								<i class="bi bi-check-circle me-1"></i>
+								<span id="saveButtonText">Create Role</span>
+							</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+	<!-- TAB 2 : ROLE PRIORITY -->
+	<div class="tab-pane fade" id="tabRolePriority">
+
+		<div class="card">
+			<div class="card-header card-priority-header">
+				<i class="fas fa-sort"></i> Role Priority
+			</div>
+
+			<div class="card-body text-center">
+				<p class="text-muted mb-2">Drag & drop roles to set priority</p>
+
+				<div class="d-flex justify-content-center">
+					<ul id="rolePriorityList" class="list-group compact-list"></ul>
+				</div>
+
+				<button class="btn btn-primary btn-sm mt-2" id="btnSavePriority">
+					Save Priority
+				</button>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+
+
+@section Scripts {
+	<script>
+		// Convert user permissions to a JS array
+		var userPermissions = [
+		@foreach (var claim in User.Claims.Where(c => c.Type == "permission"))
+		{
+			@: "@claim.Value",
+		}
+		];
+	</script>
+	<script src="~/assets/js/custom-js/roleMaster.js"></script>
+ }
+

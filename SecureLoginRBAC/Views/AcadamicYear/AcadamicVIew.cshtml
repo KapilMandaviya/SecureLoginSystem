@@ -1,0 +1,120 @@
+﻿@using System.Security.Claims
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.pTitle = "Acadamic Year";
+	ViewBag.Title = "Acadamic Year";
+}
+<link href="~/assets/custom-css/CustomMaster.css" rel="stylesheet" />
+
+<!-- HEADER -->
+<!-- ================= TABLE SECTION ================= -->
+<div class="card mb-3" id="tableSection">
+
+	<div class="card-body mb-3">
+		<div class="d-flex justify-content-between align-items-center mb-2">
+			<h4> Academic Year List</h4>
+
+			@if (User.HasClaim("permission", "Admission_AcademicYear_CREATE"))
+			{
+			<button class="btn btn-primary" id="addBtn">
+				<i class="uil uil-plus"></i> Create Acadamic Year
+			</button>
+			}
+
+		</div>
+		<table id="AcadamicYearDatatable" class="table table-bordered align-middle" style="width:100%;">
+			<thead>
+				<tr>
+					<th class="sr_no_width">Sr No</th>
+					<th>Start Date</th>
+					<th>End Date</th>
+					<th>Current Year</th>
+					<th>Active Year</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+
+	</div>
+</div>
+
+<!-- View University Modal -->
+
+
+<!-- ================= FORM SECTION ================= -->
+@* <div class="card d-none" id="formSection">
+	<div class="card-body">
+		<h5 id="formTitle">Create University</h5>
+
+
+		<input type="hidden" id="editIndex">
+
+		<div class="row">
+			<div class="col-md-6 mb-3">
+				<label class="form-label">Start Date</label>
+				<input type="date" class="form-control" id="start_date" required>
+				<small class="text-danger d-none" id="startDateError"></small>
+
+			</div>
+
+
+		</div>
+		<div class="row">
+
+			<div class="col-md-6 mb-3">
+				<label class="form-label">End Date</label>
+				<input type="date" class="form-control" id="end_date" required>
+				<small class="text-danger d-none" id="endDateError"></small>
+
+			</div>
+
+		</div>
+
+	@* 	<div class="row">
+			<div class="col-md-6 mb-3">
+				<label class="form-label">Current Academic Year</label>
+				<input type="text" class="form-control" id="current_ac_year" placeholder="2017-2018">
+			</div> 
+		</div> 
+
+
+		<button type="submit" class="btn btn-primary" id="btnSave">Save</button>
+		<button type="button" class="btn btn-secondary" id="btnCancel">Cancel</button>
+
+	</div>
+</div>
+ *@
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="academicYearSidebar">
+	<div class="offcanvas-header">
+		<h5 id="formTitle">Create Academic Year</h5>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+
+	<div class="offcanvas-body">
+
+		<input type="hidden" id="editIndex">
+
+		<div class="mb-3">
+			<label class="form-label">Start Date</label>
+			<input type="date" class="form-control" id="start_date" required>
+			<small class="text-danger d-none" id="startDateError"></small>
+		</div>
+
+		<div class="mb-3">
+			<label class="form-label">End Date</label>
+			<input type="date" class="form-control" id="end_date" required>
+			<small class="text-danger d-none" id="endDateError"></small>
+		</div>
+
+		<button type="button" class="btn btn-primary" id="btnSave">Save</button>
+		<button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">
+			Cancel
+		</button>
+
+	</div>
+</div>
+@section Scripts {
+	<script src="~/assets/js/custom-js/AcadamicView.js"></script>
+ }

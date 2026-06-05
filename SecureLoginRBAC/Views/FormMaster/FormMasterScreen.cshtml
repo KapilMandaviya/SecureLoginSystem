@@ -1,0 +1,253 @@
+﻿@using System.Security.Claims
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.pTitle = "Form Master";
+	ViewBag.Title = "Form Master";
+}
+
+<link href="~/assets/custom-css/moduleMaster.css" rel="stylesheet" />
+
+<!-- ================= TABLE SECTION ================= -->
+<!-- HEADER -->
+<!-- ================= TABLE SECTION ================= -->
+<ul class="nav nav-tabs mb-3" id="formTabs">
+	<li class="nav-item">
+		<button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tabFormMaster">
+			Form Master
+		</button>
+	</li>
+	<li class="nav-item">
+		<button class="nav-link" data-bs-toggle="tab" data-bs-target="#tabFormPriority">
+			Menu Priority
+		</button>
+	</li>
+</ul>
+
+
+<div class="tab-content">
+	<div class="tab-pane fade show active" id="tabFormMaster">
+		<div class="card mb-3" id="tableSection">
+			<div class="card-body">
+				<div class="d-flex justify-content-between align-items-center mb-2 flex-wrap">
+					<h4 class="mb-2 mb-md-0">Form List</h4>
+					@if (User.HasClaim("permission", "Admission_FormMaster_CREATE"))
+					{
+						<button class="btn btn-primary" id="addBtn">
+							<i class="uil uil-plus"></i> Create Form
+						</button>
+					}
+
+				</div>
+
+				<div class="table-responsive">
+					<table id="FormDatatable" class="table table-bordered align-middle w-100">
+						<thead>
+							<tr>
+								<th class="sr_no_width">Sr No</th>
+								<th>Form Name</th>
+								<th>Module Name</th>
+								<th>Icon</th>
+								<th>Controller</th>
+								<th>Action Method</th>
+								<th>Menu Type</th>
+								<th>Menu Order</th>
+								<th>Is Menu</th>
+								<th>Parent Menu </th>
+								<th>Actions</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- ================= VIEW MODAL ================= -->
+		<div class="modal fade" id="viewModuleModal" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Form Details</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+
+					<div class="modal-body">
+						<table class="table table-bordered mb-0">
+							<tr><th>Form Name</th><td id="v_moduleName"></td></tr>
+							<tr><th>Form Code</th><td id="v_moduleCode"></td></tr>
+							<tr><th>Icon</th><td id="v_moduleIcon"></td></tr>
+							<tr><th>Controller</th><td id="v_controller"></td></tr>
+							<tr><th>Action</th><td id="v_action"></td></tr>
+							@* <tr><th>Menu Order</th><td id="v_menuOrder"></td></tr> *@
+							<tr><th>Parent Form</th><td id="v_parent"></td></tr>
+							<tr><th>Is Menu</th><td id="v_isMenu"></td></tr>
+
+						</table>
+					</div>
+
+					<div class="modal-footer">
+						<button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ================= FORM SECTION ================= -->
+		<div class="card d-none" id="formSection">
+			<div class="card-body">
+				<h5 id="formTitle">Create Form</h5>
+
+				<input type="hidden" id="moduleId" />
+
+				<div class="row">
+					<div class="col-md-4 mb-3">
+						<label class="form-label">Form Name</label>
+						<input type="text" class="form-control" id="moduleName">
+						<div class="text-danger small d-none" id="lblModuleNameError"></div>
+					</div>
+
+					<div class="col-md-4 mb-3">
+						<label class="form-label">Form Code</label>
+						<input type="text" class="form-control" id="moduleCode">
+						<div class="text-danger small d-none" id="lblModuleCodeError"></div>
+
+					</div>
+					<div class="col-md-4 mb-3">
+						<label class="form-label">Form Icon</label>
+						<input type="text" class="form-control" id="moduleIcon" placeholder="fas-home">
+						<div class="text-danger small d-none" id="lblModuleIconError"></div>
+						<div class="mt-2">
+							<span class="text-muted small">Preview:</span>
+							<i id="iconPreview" class="ms-2 fa-2x text-primary"></i>
+						</div>
+
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 mb-3">
+						<label class="form-label">Menu Type</label>
+
+						<div class="btn-group w-100" role="group" id="menuTypeToggle">
+							<button type="button" class="btn btn-outline-primary active" data-type="parent">
+								<i class="fas fa-folder me-1"></i> Parent Menu
+							</button>
+							<button type="button" class="btn btn-outline-success" data-type="parent-no-sub">
+								<i class="fas fa-folder-open me-1"></i> Parent Menu No Sub
+							</button>
+
+							<button type="button" class="btn btn-outline-warning" data-type="submenu">
+								<i class="fas fa-level-down-alt me-1"></i> Sub Menu
+							</button>
+
+
+						</div>
+
+
+						<!-- Hidden flag -->
+						<input type="hidden" id="isMenu" value="true">
+					</div>
+					<div class="col-md-4 mb-3">
+
+						<label class="form-label">Select Module</label>
+						<select class="form-select" id="moduleSelect" name="moduleSelect">
+							<option value="0" disabled>-- Select Module --</option>
+
+							@foreach (var item in ViewBag.Modules as List<SelectListItem>)
+							{
+								<option value="@item.Value">@item.Text</option>
+							}
+						</select>
+
+						<div class="text-danger small d-none" id="lblmoduleSelect"></div>
+
+					</div>
+
+					@* <div class="col-md-4 mb-3">
+				<label class="form-label">Menu Order</label>
+				<input type="number" class="form-control" id="menuOrder" min="1">
+			</div> *@
+
+
+				</div>
+
+				<div class="row ui-submenu-only">
+					<div class="col-md-4 mb-3">
+						<label class="form-label">Controller Name</label>
+						<input type="text" class="form-control" id="controllerName">
+						<div class="text-danger small d-none" id="lblcontrollerNameError"></div>
+					</div>
+
+					<div class="col-md-4 mb-3">
+						<label class="form-label">Action Name</label>
+						<input type="text" class="form-control" id="actionName">
+						<div class="text-danger small d-none" id="lblactionNameError"></div>
+					</div>
+					<div class="col-md-4 mb-3 ui-parent-only">
+						<label class="form-label">Parent Form</label>
+						<select class="form-select" id="parentId"></select>
+						<div class="text-danger small d-none" id="lblParentError"></div>
+					</div>
+
+				</div>
+				<div class="col-md-4 mb-3 ui-submenu-only">
+					<label class="form-label">Select or insert Action</label>
+					<select class="form-control select2" id="stateSelect" multiple>
+					</select>
+					<div class="text-danger small d-none" id="lblActionSelectError"></div>
+				</div>
+
+
+				@* 		<div class="row ">
+
+		</div> *@
+
+
+
+				<div class="mt-3">
+					<button class="btn btn-primary" id="btnSave">Save</button>
+					<button class="btn btn-secondary" id="btnCancel">Cancel</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="tab-pane fade" id="tabFormPriority">
+
+
+
+		<div class="card">
+			<div class="card-header">
+				<i class="fas fa-sort"></i> Menu Priority
+			</div>
+
+			<div class="card-body text-center">
+				<p class="text-muted mb-2">Drag & drop menu and submenu to set priority</p>
+
+				<div class="d-flex justify-content-center">
+					<ul id="menuSortable" class="menu-list compact-list"></ul>
+
+
+
+				</div>
+
+				<button class="save-btn" id="saveMenuPriority">Save Priority</button>
+			</div>
+
+		</div>
+	</div>
+
+
+</div>
+
+
+@section Scripts {
+	<script src="~/assets/js/custom-js/moduleMaster.js"></script>
+}
+
+
+
+
+
+

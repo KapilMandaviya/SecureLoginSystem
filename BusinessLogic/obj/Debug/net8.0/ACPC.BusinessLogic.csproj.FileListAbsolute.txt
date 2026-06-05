@@ -1,0 +1,86 @@
+D:\All Projects\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.BusinessLogic.deps.json
+D:\All Projects\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.BusinessLogic.dll
+D:\All Projects\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.BusinessLogic.pdb
+D:\All Projects\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DomainLayer.dll
+D:\All Projects\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.RepositoryLayer.dll
+D:\All Projects\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.RepositoryLayer.pdb
+D:\All Projects\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\All Projects\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.csproj.AssemblyReference.cache
+D:\All Projects\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.AssemblyInfoInputs.cache
+D:\All Projects\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.AssemblyInfo.cs
+D:\All Projects\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.Bus.1056CD72.Up2Date
+D:\All Projects\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.dll
+D:\All Projects\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\refint\ACPC.BusinessLogic.dll
+D:\All Projects\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.pdb
+D:\All Projects\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ref\ACPC.BusinessLogic.dll
+D:\All Projects\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.UtilityLayer.dll
+D:\All Projects\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.UtilityLayer.pdb
+D:\All Projects\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DtoLayer.dll
+D:\All Projects\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.BusinessLogic.deps.json
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.BusinessLogic.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.BusinessLogic.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DomainLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DtoLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.RepositoryLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.UtilityLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.RepositoryLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.UtilityLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.csproj.AssemblyReference.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.AssemblyInfoInputs.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.AssemblyInfo.cs
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.Bus.1056CD72.Up2Date
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\refint\ACPC.BusinessLogic.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ref\ACPC.BusinessLogic.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.BusinessLogic.deps.json
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.BusinessLogic.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.BusinessLogic.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DomainLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DtoLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.RepositoryLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.UtilityLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.RepositoryLayer.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.UtilityLayer.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.csproj.AssemblyReference.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.AssemblyInfoInputs.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.AssemblyInfo.cs
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.sourcelink.json
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.Bus.1056CD72.Up2Date
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\refint\ACPC.BusinessLogic.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ref\ACPC.BusinessLogic.dll
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.BusinessLogic.deps.json
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.BusinessLogic.dll
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.BusinessLogic.pdb
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DomainLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DtoLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.RepositoryLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.UtilityLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.RepositoryLayer.pdb
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.UtilityLayer.pdb
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\bin\Debug\net8.0\ACPC.DomainLayer.pdb
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.csproj.AssemblyReference.cache
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.AssemblyInfoInputs.cache
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.AssemblyInfo.cs
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.csproj.CoreCompileInputs.cache
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.sourcelink.json
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.Bus.1056CD72.Up2Date
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.dll
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\refint\ACPC.BusinessLogic.dll
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ACPC.BusinessLogic.pdb
+D:\shrey_gandhi\ACPC\ACPC.BusinessLogic\obj\Debug\net8.0\ref\ACPC.BusinessLogic.dll

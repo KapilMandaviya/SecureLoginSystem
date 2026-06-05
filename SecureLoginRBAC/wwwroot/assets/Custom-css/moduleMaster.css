@@ -1,0 +1,165 @@
+﻿.select2-container {
+    width: 100% !important;
+}
+
+.card {
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+}
+
+    .card:hover {
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+    }
+
+.card-header {
+     
+    border-bottom: 1px solid #e9ecef;
+    padding: 10px 1px 5px 25px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .card-header i {
+        color: #0d6efd;
+        
+    }
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Prevent flicker – keep layout stable */
+.ui-hidden {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Smooth, no animation jump */
+.ui-submenu-only {
+    transition: visibility 0s, height 0s;
+}
+    
+
+#menuTypeToggle .btn.active {
+    color: #fff;
+}
+    
+#menuTypeToggle .btn[data-type="parent"].active {
+    background-color: #0d6efd;
+}
+                                                                                                                                                                                                                                                                       
+#menuTypeToggle .btn[data-type="submenu"].active {
+    background-color: #ffc107;
+    color: #000;    
+}
+
+.priority-container {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.hint {
+    font-size: 13px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.menu-list, .submenu-list {
+    list-style: none;
+    padding: 0;
+    cursor: move;
+    margin: 0;
+}
+
+.menu-item, .submenu-item {
+    background: #f8f9fa;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.menu-row, .submenu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.submenu-list {
+    margin: 8px 0 8px 40px;
+}
+
+.priority {
+    background: #0d6efd;
+    color: #fff;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.handle {
+    cursor: grab;
+    margin-right: 10px;
+    color: #6c757d;
+}
+
+ 
+
+.save-btn {
+    background: #6f7ef6;
+    border: none;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+ 
+
+.submenu-list {
+    margin-left: 30px;
+}
+
+    .submenu-list.collapsed {
+        display: none;
+    }
+
+.toggle i {
+    transition: transform 0.3s ease;
+}
+
+.toggle.collapsed i {
+    transform: rotate(-90deg);
+}
+
+
+.menu-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    flex-grow: 1; /* pushes toggle to extreme right */
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+
+.compact-list {
+    font-size:18px;
+    width: 40%; /* small width */
+}

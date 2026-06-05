@@ -1,0 +1,48 @@
+D:\All Projects\ACPC\ACPC.DtoLayer\bin\Debug\net8.0\ACPC.DtoLayer.deps.json
+D:\All Projects\ACPC\ACPC.DtoLayer\bin\Debug\net8.0\ACPC.DtoLayer.dll
+D:\All Projects\ACPC\ACPC.DtoLayer\bin\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\All Projects\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.AssemblyInfoInputs.cache
+D:\All Projects\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.AssemblyInfo.cs
+D:\All Projects\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.dll
+D:\All Projects\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\refint\ACPC.DtoLayer.dll
+D:\All Projects\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\All Projects\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ref\ACPC.DtoLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.DtoLayer\bin\Debug\net8.0\ACPC.DtoLayer.deps.json
+D:\All Projects\ACPC Project\ACPC\ACPC.DtoLayer\bin\Debug\net8.0\ACPC.DtoLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.DtoLayer\bin\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC Project\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.AssemblyInfoInputs.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.AssemblyInfo.cs
+D:\All Projects\ACPC Project\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC Project\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\refint\ACPC.DtoLayer.dll
+D:\All Projects\ACPC Project\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\All Projects\ACPC Project\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ref\ACPC.DtoLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DtoLayer\bin\Debug\net8.0\ACPC.DtoLayer.deps.json
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DtoLayer\bin\Debug\net8.0\ACPC.DtoLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DtoLayer\bin\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.AssemblyInfoInputs.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.AssemblyInfo.cs
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.csproj.CoreCompileInputs.cache
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.sourcelink.json
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\refint\ACPC.DtoLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ref\ACPC.DtoLayer.dll
+D:\All Projects\ACPC Project\Github\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.csproj.AssemblyReference.cache
+D:\shrey_gandhi\ACPC\ACPC.DtoLayer\bin\Debug\net8.0\ACPC.DtoLayer.deps.json
+D:\shrey_gandhi\ACPC\ACPC.DtoLayer\bin\Debug\net8.0\ACPC.DtoLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.DtoLayer\bin\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\shrey_gandhi\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.csproj.AssemblyReference.cache
+D:\shrey_gandhi\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\shrey_gandhi\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.AssemblyInfoInputs.cache
+D:\shrey_gandhi\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.AssemblyInfo.cs
+D:\shrey_gandhi\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.csproj.CoreCompileInputs.cache
+D:\shrey_gandhi\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.sourcelink.json
+D:\shrey_gandhi\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\refint\ACPC.DtoLayer.dll
+D:\shrey_gandhi\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ACPC.DtoLayer.pdb
+D:\shrey_gandhi\ACPC\ACPC.DtoLayer\obj\Debug\net8.0\ref\ACPC.DtoLayer.dll

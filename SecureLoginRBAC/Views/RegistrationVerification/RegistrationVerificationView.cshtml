@@ -1,0 +1,210 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.pTitle = "Registration Verification";
+	ViewBag.Title = "Registration Verification";
+}
+
+<link href="~/assets/custom-css/RegistrationVerification.css" rel="stylesheet" />
+
+
+<input type="hidden" id="captchaAuthSettingId" />
+<input type="hidden" id="emailOtpAuthSettingId" />
+<input type="hidden" id="mobileOtpAuthSettingId" />
+<input type="hidden" id="twoFaAuthSettingId" />
+
+<div class="card mb-4">
+	<div class="card-header">
+		<i class="fas fa-shield-alt"></i> Registration Verification Methods
+	</div>
+
+	<div class="card-body">
+		<p class="section-subtitle">
+			Configure OTP Verification for Student Registration
+		</p>
+
+		<div class="row mb-1">
+
+
+			<div class="col-md-4">
+
+				<div class="method-card d-flex" id="mobileOtpCard">
+
+					<div>
+						<div class="method-name">Mobile OTP Verification</div>
+						<div class="method-desc">
+							One-time password sent via SMS to user's mobile number
+						</div>
+					</div>
+
+					<div class="form-check form-switch form-switch-lg">
+						<input type="checkbox" class="form-check-input" id="mobileOtpToggle">
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="method-card d-flex" id="emailOtpCard">
+
+					<div>
+						<div class="method-name">Email OTP Verification</div>
+						<div class="method-desc">
+							One-time password sent to user's registered email address
+						</div>
+					</div>
+
+					<div class="form-check form-switch form-switch-lg">
+						<input type="checkbox" class="form-check-input" id="emailOtpToggle">
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="col-md-4">
+				<div class="method-card d-flex" id="autoExpireAccount">
+
+					<div>
+						<div class="method-name">Auto-Expire Unverified Registration</div>
+						<div class="method-desc">
+
+							Delete unverified students registration after 48 hours
+						</div>
+					</div>
+
+					<div class="form-check form-switch form-switch-lg">
+						<input type="checkbox" class="form-check-input" id="autoExpireAccountToggle">
+					</div>
+
+				</div>
+
+			</div>
+			@* 	<div class="col-md-4">
+					<div class="method-card d-flex" id="autoExpireAccount">
+
+						<div>
+							<div class="method-name"></div>
+							<div class="method-desc">
+
+							</div>
+						</div>
+
+						<div class="form-check form-switch form-switch-lg">
+							<input type="checkbox" class="form-check-input" id="autoExpireAccountToggle">
+						</div>
+
+					</div>
+
+				</div> *@
+
+
+
+		</div>
+
+		<div class="small-note">
+			<i class="fas fa-info-circle"></i>
+			<span>
+				At least one authentication method must be active. Changes will take effect
+				immediately.
+			</span>
+		</div>
+
+	</div>
+	<div class="card-header">
+		<i class="fas fa-clock"></i>
+		OTP Rules & Limits
+	</div>
+	<div class="card-body">
+		<p class="section-subtitle">Configure attempts and reset timers for OTP verification.</p>
+
+		<div class="row g-3">
+			<div class="col-md-4">
+				<label class="form-label">Mobile OTP Attempts</label>
+				<div class="input-group">
+					<input type="number" class="form-control" value="3" min="1" max="10" id="mobileOtpAttempts">
+					<span class="input-group-text">times</span>
+				</div>
+				<div class="small-note mt-1">Maximum incorrect attempts before lockout</div>
+			</div>
+
+			<div class="col-md-4">
+				<label class="form-label">Mobile OTP Reset</label>
+				<div class="input-group">
+					<input type="number" class="form-control" value="10" min="1" max="60" id="mobileOtpReset">
+					<span class="input-group-text">minutes</span>
+				</div>
+				<div class="small-note mt-1">Timeout for Resend OTP</div>
+			</div>
+
+			<div class="col-md-4">
+				<label class="form-label">Mobile OTP Expiration Time</label>
+				<div class="input-group">
+					<input type="number" class="form-control" min="1" max="60"
+						   id="otpMobileExpirationTime">
+					<span class="input-group-text">minutes</span>
+				</div>
+				<div class="small-note mt-1">
+					Time after which the OTP becomes invalid
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<label class="form-label">Email OTP Attempts</label>
+				<div class="input-group">
+					<input type="number" class="form-control" value="3" min="1" max="10" id="emailOtpAttempts">
+					<span class="input-group-text">times</span>
+				</div>
+				<div class="small-note mt-1">Maximum incorrect attempts before lockout</div>
+			</div>
+
+			<div class="col-md-4">
+				<label class="form-label">Email OTP Reset</label>
+				<div class="input-group">
+					<input type="number" class="form-control" value="10" min="1" max="60" id="emailOtpReset">
+					<span class="input-group-text">minutes</span>
+				</div>
+				<div class="small-note mt-1">Timeout for Resend OTP</div>
+			</div>
+
+			<div class="col-md-4">
+				<label class="form-label">Email OTP Expiration Time</label>
+				<div class="input-group">
+					<input type="number" class="form-control" min="1" max="60"
+						   id="otpEmailExpirationTime">
+					<span class="input-group-text">minutes</span>
+				</div>
+				<div class="small-note mt-1">
+					Time after which the OTP becomes invalid
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="d-flex  justify-content-end gap-2 p-3">
+		<button class="btn btn-secondary px-4" id="btnCancelSetting">
+			<i class="me-1"></i> Cancel
+		</button>
+
+		@if (User.HasClaim("permission", "Admission_RegistrationVerification_CREATE") || User.HasClaim("permission", "Admission_RegistrationVerification_UPDATE"))
+		{
+
+			<button class="btn btn-primary px-4" id="btnUpdateAuthSetting">
+				<i class="fas fa-save me-1"></i> Update Settings
+			</button>
+
+
+
+		}
+	</div>
+</div>
+
+
+@section Scripts {
+	<script src="~/assets/js/custom-js/registrationverificationsetting.js"></script>
+
+
+}
+

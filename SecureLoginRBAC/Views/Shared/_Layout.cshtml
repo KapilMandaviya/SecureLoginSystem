@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="~/assets/libs/select2/css/select2.min.css" rel="stylesheet" />
+	
+	<link href="~/assets/libs/toastr/build/toastr.min.css" rel="stylesheet" />
+	
+	<link href="~/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+	<link href="~/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- Responsive datatable examples -->
+	<link href="~/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+	<link href="~/assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+	
+	<partial name="~/Views/Shared/_title_meta.cshtml" />
+	@RenderSection("styles", false)
+	<partial name="~/Views/Shared/_head_css.cshtml" />
+
+	<style>
+
+		/* SUCCESS */
+		.toast-success {
+			background-color: #198754 !important; /* Bootstrap green */
+			color: #ffffff !important;
+		}
+
+		/* ERROR */
+		.toast-error {
+			background-color: #dc3545 !important; /* Bootstrap red */
+			color: #ffffff !important;
+		}
+
+		/* INFO */
+		.toast-info {
+			background-color: #0dcaf0 !important; /* Bootstrap info */
+			color: #000000 !important;
+		}
+
+		/* WARNING */
+		.toast-warning {
+			background-color: #ffc107 !important; /* Bootstrap warning */
+			color: #000000 !important;
+		}
+
+		/* Title text */
+		.toast-title {
+			font-weight: 600;
+		}
+
+		/* Message text */
+		.toast-message {
+			font-size: 14px;
+		}
+
+		/* Close button */
+		.toast-close-button {
+			color: #ffffff !important;
+			opacity: 0.8;
+		}
+
+
+		table.dataTable th {
+			padding: 8px 5px !important;
+			background-color: #f2f2f2;
+		}
+
+		table.dataTable td {
+			padding: 2px 2px !important;
+		}
+
+		.sr_no_width {
+			width: 55px;
+		}
+
+
+		.page-loader {
+			position: fixed;
+			inset: 0;
+			background: rgba(255, 255, 255, 0.75);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 99999;
+			display: none; /* hidden by default */
+		}
+
+		.spinner {
+			width: 45px;
+			height: 45px;
+			border: 5px solid #e0e0e0;
+			border-top: 5px solid #0d6efd;
+			border-radius: 50%;
+			animation: spin 0.8s linear infinite;
+		}
+
+		@@keyframes spin {
+			to {
+				transform: rotate(360deg);
+			}
+		} 
+
+		.dropdown-menu {
+			min-width:8rem;
+			font-size:16px;
+			
+			
+			--bs-dropdown-link-hover-bg: lightgray;
+		}
+
+
+		.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+			cursor: default;
+			padding-left: 10px;
+			padding-right: 5px;
+			color: white;
+		}
+
+		.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+			border-right: 0px;
+		}
+
+		.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+			color: #ffffff;
+		}
+
+		.select2-container .select2-selection--multiple .select2-selection__choice {
+			background-color: #4e74e7;
+			border-radius: 4px;
+		}
+
+		/* button:hover {
+			background-color: #4e74e7;
+		}
+ */
+		.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:focus {
+			background-color: #4e74e7;
+			color: #333;
+			outline: none;
+		}
+		
+		.select2-container--default .select2-search--inline .select2-search__field {
+			background: transparent;
+			border: none;
+			outline: 0;
+			box-shadow: none;
+			margin-left: 4px;
+			margin-top: 4px;
+			padding: 0;
+			height: 28px;
+			line-height: 28px;
+			/* IMPORTANT FIX */
+			position: relative; /* or just remove position */
+			min-width: 120px; /* allows wrap to next line */
+		}
+
+
+		/* .dropdown-menu {
+			--bs-dropdown-zindex: 1000;
+			--bs-dropdown-min-width: 10rem;
+			--bs-dropdown-padding-x: 0;
+			--bs-dropdown-padding-y: 0.5rem;
+			--bs-dropdown-spacer: 0.125rem;
+			--bs-dropdown-font-size: 0.9rem;
+			--bs-dropdown-color: var(--bs-body-color);
+			--bs-dropdown-bg: var(--bs-secondary-bg);
+			--bs-dropdown-border-color: var(--bs-border-color);
+			--bs-dropdown-border-radius: var(--bs-border-radius);
+			--bs-dropdown-border-width: var(--bs-border-width);
+			--bs-dropdown-inner-border-radius: calc(var(--bs-border-radius) - var(--bs-border-width));
+			--bs-dropdown-divider-bg: var(--bs-border-color);
+			--bs-dropdown-divider-margin-y: 0.5rem;
+			--bs-dropdown-box-shadow: 0 2px 4px rgba(15, 34, 58, 0.12);
+			--bs-dropdown-link-color: var(--bs-body-color);
+			--bs-dropdown-link-hover-color: var(--bs-body-color);
+			--bs-dropdown-link-hover-bg: #4088cf;
+			--bs-dropdown-link-active-color: var(--bs-body-color);
+			--bs-dropdown-link-active-bg: var(--bs-tertiary-bg);
+			--bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
+			--bs-dropdown-item-padding-x: 1rem;
+			--bs-dropdown-item-padding-y: 0.25rem;
+			--bs-dropdown-header-color: #74788d;
+			--bs-dropdown-header-padding-x: 1rem;
+			--bs-dropdown-header-padding-y: 0.5rem;
+			position: absolute;
+			z-index: var(--bs-dropdown-zindex);
+			display: none;
+			min-width: var(--bs-dropdown-min-width);
+			padding: var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);
+			margin: 0;
+			font-size: var(--bs-dropdown-font-size);
+			color: var(--bs-dropdown-color);
+			text-align: left;
+			list-style: none;
+			background-color: var(--bs-dropdown-bg);
+			background-clip: padding-box;
+			border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
+			border-radius: var(--bs-dropdown-border-radius);
+		} */
+	</style>
+</head>
+
+<body>
+	<!-- Page Loader -->
+	<div id="pageLoader" class="page-loader">
+		<div class="spinner"></div>
+	</div>
+
+	<!-- Begin page -->
+	<div id="layout-wrapper">
+		<partial name="~/Views/Shared/_topbar.cshtml" />
+		<partial name="~/Views/Shared/_sidebar.cshtml" />
+
+		<!-- ============================================================== -->
+		<!-- Start right Content here -->
+		<!-- ============================================================== -->
+
+		<div class="main-content">
+			<div class="page-content">
+				<div class="container-fluid">
+					<partial name="~/Views/Shared/_page_title.cshtml" />
+
+					@RenderBody()
+				</div> <!-- container-fluid -->
+			</div>
+			<!-- End Page-content -->
+			@* @Html.Partial("~/Views/Shared/_footer.cshtml") *@
+		</div>
+		<!-- end main content-->
+
+	</div>
+
+	<!-- END layout-wrapper -->
+	@* @Html.Partial("~/Views/Shared/_right_sidebar.cshtml") *@
+
+	@* @Html.Partial("~/Views/Shared/_vendor_scripts.cshtml") *@
+
+	<partial name="/Views/Shared/_right_sidebar.cshtml" />
+	<partial name="~/Views/Shared/_vendor_scripts.cshtml" />
+
+	<script src="~/assets/js/app.js"></script>
+
+	<script src="~/assets/libs/select2/js/select2.min.js"></script>
+	<script src="~/assets/js/pages/form-advanced.init.js"></script>
+
+	<script src="~/assets/libs/parsleyjs/parsley.min.js"></script>
+
+	<script src="~/assets/js/pages/form-validation.init.js"></script>
+
+	<script src="~/assets/js/toastr.min.js"></script>
+	<script src="~/assets//js/Custom-Js/notificationToastCustom.js" >  </script>
+	<script src="~/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="~/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+	<script src="~/assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+	<script src="~/assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+	<script src="~/assets/libs/jszip/jszip.min.js"></script>
+	<script src="~/assets/libs/pdfmake/build/pdfmake.min.js"></script>
+	<script src="~/assets/libs/pdfmake/build/vfs_fonts.js"></script>
+	<script src="~/assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+	<script src="~/assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+	<script src="~/assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+
+	<!-- Responsive examples -->
+	<script src="~/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="~/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+	<!-- Datatable init js -->
+	<script src="~/assets/js/pages/datatables.init.js"></script>
+	<script src="~/assets/libs/sweetalert2/sweetalert2.min.js"></script>
+	<script src="~/assets/js/custom-js/sidebarMenu.js"></script>
+	
+	@* <script src="/assets/js/pages/sweet-alerts.init.js"></script> *@
+	@section Script {
+		<script>
+			
+			function showLoader() {
+				document.getElementById("pageLoader").style.display = "flex";
+			}
+
+			function hideLoader() {
+				document.getElementById("pageLoader").style.display = "none";
+			}
+
+			// Show loader when page is refreshing / navigating
+			window.addEventListener("beforeunload", function () {
+				showLoader();
+			});
+
+			// Hide loader after page fully loads
+			window.addEventListener("load", function () {
+				hideLoader();
+			});
+
+			// Show loader on any form submit
+			document.addEventListener("DOMContentLoaded", function () {
+				document.querySelectorAll("form").forEach(form => {
+					form.addEventListener("submit", () => showLoader());
+				});
+			});
+
+		</script>
+	}
+	@RenderSection("scripts", required: false)
+
+
+</body>
+
+</html>

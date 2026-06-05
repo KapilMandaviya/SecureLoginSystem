@@ -1,0 +1,389 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.pTitle = "Authentication Settings";
+	ViewBag.Title = "Authentication Settings";
+}
+<link href="~/assets/custom-css/AdminAuthSetting.css" rel="stylesheet" />
+
+<div class="container-main">
+	<ul class="nav nav-tabs mb-4" id="authTabs" role="tablist">
+		<li class="nav-item" role="presentation">
+			<button class="nav-link active" id="auth-tab" data-bs-toggle="tab" data-bs-target="#authSettings"
+					type="button" role="tab">
+				<i class="fas fa-shield-alt me-1"></i> Authentication Settings
+			</button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="password-tab" data-bs-toggle="tab" data-bs-target="#passwordCriteria"
+					type="button" role="tab">
+				<i class="fas fa-solid fa-key me-1"></i> Password Criteria
+			</button>
+		</li>
+	</ul>
+
+
+	<div class="tab-content">
+		<div class="tab-pane fade show active" id="authSettings" role="tabpanel">
+			<input type="hidden" id="captchaAuthSettingId" />
+			<input type="hidden" id="emailOtpAuthSettingId" />
+			<input type="hidden" id="mobileOtpAuthSettingId" />
+			<input type="hidden" id="twoFaAuthSettingId" />
+
+			<div class="card mb-4">
+				<div class="card-header">
+					<i class="fas fa-shield-alt"></i> Authentication Methods
+				</div>
+
+				<div class="card-body">
+					<p class="section-subtitle">
+						Enable or disable authentication methods for your users. Multiple
+						methods can be active simultaneously.
+					</p>
+
+					<div class="row g-3 mb-1">
+						<div class="col-md-6 col-lg-3">
+							<div class="method-card" id="captchaCard">
+								<div class="method-icon">
+									<i class="fas fa-solid fa-robot" style="font-size: 1.2rem"></i>
+								</div>
+								<div class="method-name">Captcha</div>
+								<div class="method-desc">Protects against automated attacks and bots</div>
+								<div class="mt-3">
+									<div class="form-check form-switch form-switch-lg">
+										<input type="checkbox" class="form-check-input" id="captchaToggle">
+									</div>
+
+									<span class="badge-info">Default</span>
+								</div>
+
+
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3">
+							<div class="method-card" id="emailOtpCard">
+								<div class="method-icon">
+									<i class="fas fa-solid fa-envelope" style="font-size: 1.2rem"></i>
+								</div>
+								<div class="method-name">Email OTP</div>
+								<div class="method-desc">
+									One-time password sent to user's registered email address
+								</div>
+								<div class="mt-3 d-flex justify-content-between align-items-center">
+									<div class="form-check form-switch form-switch-lg">
+										<input type="checkbox" class="form-check-input" id="emailOtpToggle">
+									</div>
+									<button type="button"
+											class="btn btn-primary btn-sm"
+											id="filterBtn"
+											data-bs-toggle="offcanvas"
+											data-bs-target="#btnEmailSidebar">
+										configure
+									</button>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3">
+							<div class="method-card" id="mobileOtpCard">
+								<div class="method-icon">
+									<i class="fas fa-mobile-alt" style="font-size: 1.2rem"></i>
+								</div>
+								<div class="method-name">Mobile OTP</div>
+								<div class="method-desc">
+									One-time password sent via SMS to user's mobile number
+								</div>
+								<div class="mt-3 d-flex justify-content-between align-items-center">
+									<div class="form-check form-switch form-switch-lg">
+										<input type="checkbox" class="form-check-input" id="mobileOtpToggle">
+									</div>
+									<button type="button"
+											class="btn btn-primary btn-sm"
+											id="filterBtn"
+											data-bs-toggle="offcanvas"
+											data-bs-target="#btnMobileSidebar">
+										configure
+									</button>
+								</div>
+
+
+							</div>
+
+						</div>
+
+						<div class="col-md-6 col-lg-3">
+							<div class="method-card" id="twoFaCard">
+								<div class="method-icon">
+									<i class="fas fa-solid fa-key" style="font-size: 1.2rem"></i>
+								</div>
+								<div class="method-name">Two-Factor Authentication</div>
+								<div class="method-desc">Authenticator apps like Google Authenticator or Authy</div>
+								<div class="mt-3 d-flex justify-content-between align-items-center">
+									<div class="form-check form-switch form-switch-lg">
+										<input type="checkbox" class="form-check-input" id="twoFaToggle">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="small-note">
+						<i class="fas fa-info-circle"></i>
+						<span>
+							At least one authentication method must be active. Changes will take effect
+							immediately.
+						</span>
+					</div>
+
+				</div>
+				<div class="card-header">
+					<i class="fas fa-clock"></i>
+					OTP Rules & Limits
+				</div>
+				<div class="card-body">
+					<p class="section-subtitle">Configure attempts and reset timers for OTP verification.</p>
+
+					<div class="row g-3">
+						<div class="col-md-4">
+							<label class="form-label">Mobile OTP Attempts</label>
+							<div class="input-group">
+								<input type="number" class="form-control" value="3" min="1" max="10" id="mobileOtpAttempts">
+								<span class="input-group-text">times</span>
+							</div>
+							<div class="small-note mt-1">Maximum incorrect attempts before lockout</div>
+						</div>
+
+						<div class="col-md-4">
+							<label class="form-label">Mobile OTP Reset</label>
+							<div class="input-group">
+								<input type="number" class="form-control" value="10" min="1" max="60" id="mobileOtpReset">
+								<span class="input-group-text">minutes</span>
+							</div>
+							<div class="small-note mt-1">Timeout for Resend OTP</div>
+						</div>
+
+						<div class="col-md-4">
+							<label class="form-label">Mobile OTP Expiration Time</label>
+							<div class="input-group">
+								<input type="number" class="form-control" min="1" max="60"
+									   id="otpMobileExpirationTime">
+								<span class="input-group-text">minutes</span>
+							</div>
+							<div class="small-note mt-1">
+								Time after which the OTP becomes invalid
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<label class="form-label">Email OTP Attempts</label>
+							<div class="input-group">
+								<input type="number" class="form-control" value="3" min="1" max="10" id="emailOtpAttempts">
+								<span class="input-group-text">times</span>
+							</div>
+							<div class="small-note mt-1">Maximum incorrect attempts before lockout</div>
+						</div>
+
+						<div class="col-md-4">
+							<label class="form-label">Email OTP Reset</label>
+							<div class="input-group">
+								<input type="number" class="form-control" value="10" min="1" max="60" id="emailOtpReset">
+								<span class="input-group-text">minutes</span>
+							</div>
+							<div class="small-note mt-1">Timeout for Resend OTP</div>
+						</div>
+
+						<div class="col-md-4">
+							<label class="form-label">Email OTP Expiration Time</label>
+							<div class="input-group">
+								<input type="number" class="form-control" min="1" max="60"
+									   id="otpEmailExpirationTime">
+								<span class="input-group-text">minutes</span>
+							</div>
+							<div class="small-note mt-1">
+								Time after which the OTP becomes invalid
+							</div>
+						</div>
+
+
+						<div class="col-md-4">
+							<label class="form-label">2FA Attempts</label>
+							<div class="input-group">
+								<input type="number" class="form-control" value="3" min="1" max="10" id="twoFaAttempts">
+								<span class="input-group-text">times</span>
+							</div>
+							<div class="small-note mt-1">Maximum incorrect attempts before lockout</div>
+						</div>
+
+
+
+					</div>
+				</div>
+
+				<div class="d-flex  justify-content-end gap-2 p-3">
+					<button class="btn btn-outline-secondary px-4" id="btnCancelAuthSetting">
+						<i class="me-1"></i> Cancel
+					</button>
+					<button class="btn btn-primary px-4" id="btnUpdateAuthSetting">
+						<i class="fas fa-save me-1"></i> Update Settings
+					</button>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="tab-pane fade" id="passwordCriteria" role="tabpanel">
+			<div class="card mb-4 h-100">
+				<div class="card-header">
+					<i class="fas fa-solid fa-key"></i> Password Validation Rules
+				</div>
+
+				<div class="card-body">
+					<p class="section-subtitle">Define password complexity requirements for user accounts.</p>
+
+					<div class="settings-group">
+						<!-- Minimum Length Rule -->
+						<div class="d-flex justify-content-between align-items-center mb-3">
+							<div class="form-check g-1">
+								<input class="form-check-input" type="checkbox" id="minLength" data-ruleid="0">
+								<label class="form-check-label" for="minLength">Minimum 8 characters</label>
+							</div>
+							<span class="badge-info">Required</span>
+						</div>
+
+						<!-- Uppercase Rule -->
+						<div class="d-flex justify-content-between align-items-center mb-3">
+							<div class="form-check g-1">
+								<input class="form-check-input" type="checkbox" id="uppercase" data-ruleid="0">
+								<label class="form-check-label" for="uppercase">At least 1 uppercase letter</label>
+							</div>
+						</div>
+
+						<!-- Lowercase Rule -->
+						<div class="d-flex justify-content-between align-items-center mb-3">
+							<div class="form-check g-1">
+								<input class="form-check-input" type="checkbox" id="lowercase" data-ruleid="0">
+								<label class="form-check-label" for="lowercase">At least 1 lowercase letter</label>
+							</div>
+						</div>
+
+						<!-- Numeric Rule -->
+						<div class="d-flex justify-content-between align-items-center mb-3">
+							<div class="form-check g-1">
+								<input class="form-check-input" type="checkbox" id="number" data-ruleid="0">
+								<label class="form-check-label" for="number">At least 1 number</label>
+							</div>
+						</div>
+
+						<!-- Special Character Rule -->
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="specialChar" data-ruleid="0">
+								<label class="form-check-label" for="specialChar">
+									At least 1 special character
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<!-- Small note about rule enforcement -->
+					<div class="small-note mt-3">
+						<i class="fas fa-lightbulb"></i>
+						<span>
+							All selected rules will be enforced during password creation and password
+							reset.
+						</span>
+					</div>
+
+					<!-- Buttons to cancel or save settings -->
+					<div class="d-flex  justify-content-end gap-2 p-3">
+						<button class="btn btn-outline-secondary px-4" id="btnCancelPasswordRule">
+							<i class="me-1"></i> Cancel
+						</button>
+						<button type="button" class="btn btn-primary px-4" id="updatePasswordRules">
+							<i class="fas fa-save me-1"></i> Update Settings
+						</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="btnEmailSidebar">
+	<div class="offcanvas-header">
+		<h5>Email Configuration</h5>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+
+	<div class="offcanvas-body" id="btnEmailForm">
+
+		<input type="hidden" id="editIndex">
+
+		<div class="mb-2">
+			<label class="form-label">Email </label>
+			<input type="text" class="form-control" id="txtemail" required>
+			<div class="text-danger small field-error d-none" id="lblemailError"></div>
+
+		</div>
+
+		@* <div class="mb-2 ">
+			<label class="form-label">Email App Password </label>
+			<input type="password" class="form-control" id="txtPassword" required style="width:80%">
+			<!-- Eye icon -->
+			<i class="fas fa-eye toggle-password" id="togglePassword"></i>
+			<div class="text-danger small field-error d-none" id="lblPasswordError"></div>
+
+		</div> *@
+		<div class="mb-2">
+			<label class="form-label">Email App Password</label>
+
+			<div class="input-group">
+				<input type="password"
+					   class="form-control"
+					   id="txtPassword"
+					   maxlength="16"
+					   required>
+
+				<span class="input-group-text" id="togglePassword">
+					<i class="fas fa-eye toggle-password"></i>
+				</span>
+			</div>
+
+			<div class="text-danger small field-error d-none" id="lblPasswordError"></div>
+		</div>
+
+
+
+		<div class="mb-2">
+			<label class="form-label">SMTP Port</label>
+			<input type="text" class="form-control" id="txtSmtpPort" maxlength="3" required>
+			<div class="text-danger small field-error d-none" id="lblSmtpError"></div>
+		</div>
+
+		<div class="mb-4">
+			<label class="form-label">SMTP Server</label>
+			<input type="text" class="form-control" id="txtSmtpServer" required>
+			<div class="text-danger small field-error d-none" id="lblSmtpServerError"></div>
+		</div>
+
+
+
+		<button type="submit" class="btn btn-primary" id="btnSaveEmail">Save</button>
+		<button type="button" class="btn btn-secondary ms-2" id="btnCancelEmail">Reset</button>
+
+	</div>
+</div>
+
+
+
+
+@section Scripts {
+
+	<script src="~/assets/js/custom-js/AdminAuthSetting.js"></script>
+ }
