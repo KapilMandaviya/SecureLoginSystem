@@ -710,7 +710,7 @@ SET IDENTITY_INSERT [dbo].[EmailLoginOtp] OFF
 GO
 SET IDENTITY_INSERT [dbo].[EmailMaster] ON 
 
-INSERT [dbo].[EmailMaster] ([emailId], [email], [appPassword], [smtpPort], [smtpServer], [isActive], [createdBy], [createdDate], [updateDate], [lastModify], [deletedDate]) VALUES (1, N'kapil.m@paramsoftware.com', N'1234567890123454', 587, N'paramsoftware.com', 1, 0, CAST(N'2026-01-13T13:24:20.883' AS DateTime), CAST(N'2026-01-29T13:47:44.140' AS DateTime), N'U', NULL)
+INSERT [dbo].[EmailMaster] ([emailId], [email], [appPassword], [smtpPort], [smtpServer], [isActive], [createdBy], [createdDate], [updateDate], [lastModify], [deletedDate]) VALUES (1, N'test@gmail.com', N'1234567890123454', 587, N'test.com', 1, 0, CAST(N'2026-01-13T13:24:20.883' AS DateTime), CAST(N'2026-01-29T13:47:44.140' AS DateTime), N'U', NULL)
 SET IDENTITY_INSERT [dbo].[EmailMaster] OFF
 GO
 SET IDENTITY_INSERT [dbo].[formMaster] ON 
@@ -773,7 +773,7 @@ SET IDENTITY_INSERT [dbo].[QuotaMaster] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Registration] ON 
 
-INSERT [dbo].[Registration] ([EmpId], [Emp_name], [Address], [City_id], [City], [State], [Pincode], [Email], [Password], [Mobile], [Birthdate], [IP_address], [Insert_date], [Update_date], [Delete_date], [Is_delete], [IsActive], [IsActive_Remark], [U_id], [Role_id], [Fc_id], [College_id], [Desig_id], [Emp_code], [Note], [FormName], [Primary_Emp_Id], [EmpStatus], [merge_status], [Disci_id]) VALUES (1, N'PARAM SUPPORT', N'RAJKOT', 1, N'ANAND', N'GUJARAT', N'360002', N'kapil@mandaviya.com', N'QBCcbMcaIg3Gk89sAeOSvw==', N'7600017671', N'01/01/2000', N'182.237.14.194', N'18/06/2018', N'20/11/2025', NULL, N'N', 1, NULL, 1, 1, 1, 1, 4, N'PS1', N'', N'Login', 1, N'P', NULL, NULL)
+INSERT [dbo].[Registration] ([EmpId], [Emp_name], [Address], [City_id], [City], [State], [Pincode], [Email], [Password], [Mobile], [Birthdate], [IP_address], [Insert_date], [Update_date], [Delete_date], [Is_delete], [IsActive], [IsActive_Remark], [U_id], [Role_id], [Fc_id], [College_id], [Desig_id], [Emp_code], [Note], [FormName], [Primary_Emp_Id], [EmpStatus], [merge_status], [Disci_id]) VALUES (1, N'TEST SUPPORT', N'RAJKOT', 1, N'ANAND', N'GUJARAT', N'360002', N'kapil@mandaviya.com', N'QBCcbMcaIg3Gk89sAeOSvw==', N'7600017671', N'01/01/2000', N'182.237.14.194', N'18/06/2018', N'20/11/2025', NULL, N'N', 1, NULL, 1, 1, 1, 1, 4, N'PS1', N'', N'Login', 1, N'P', NULL, NULL)
 INSERT [dbo].[Registration] ([EmpId], [Emp_name], [Address], [City_id], [City], [State], [Pincode], [Email], [Password], [Mobile], [Birthdate], [IP_address], [Insert_date], [Update_date], [Delete_date], [Is_delete], [IsActive], [IsActive_Remark], [U_id], [Role_id], [Fc_id], [College_id], [Desig_id], [Emp_code], [Note], [FormName], [Primary_Emp_Id], [EmpStatus], [merge_status], [Disci_id]) VALUES (2, N'Kapil Mandaviya', N'RAJKOT', 1, N'Jamnagar', N'GUJARAT', N'361120', N'19mca001@gardividyapith.ac.in', N'QBCcbMcaIg3Gk89sAeOSvw==', N'9601500889', N'01/01/2000', N'182.237.14.194', N'18/06/2018', N'20/11/2025', NULL, N'N', 1, NULL, 1, 2, NULL, 1, 4, N'PS1', N'', N'Login', 2, N'P', NULL, NULL)
 SET IDENTITY_INSERT [dbo].[Registration] OFF
 GO
